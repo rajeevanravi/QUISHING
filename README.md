@@ -65,7 +65,7 @@ This document shows a **safe, non-operational** workflow for studying user inter
 
 7. Use a client-side-only form for mock interactions (example: action="#" and prevent default submission). Simulate success client-side; do not store credentials.
    Start a local development server in an isolated lab environment to serve the mock pages.
-8. If you need to access the mock site from another machine in the lab, use a private, internal network or a lab-only tunnel; do **not** expose the service to the public Internet.(use ngrok for public tunning)
+8. If you need to access the mock site from another machine in the lab, use a private, internal network or a lab-only tunnel; do **not** expose the service to the public Internet.(use public tunning)
 9. Use the QR.py script that links to the local mock page for testing purposes only. The generator should produce harmless images that point to lab-controlled, non-production URLs.
 10. When prompted for a URL during testing, provide a lab-only URL that you control. Do not provide any public or third-party URLs.
 11. The generated QR code is for internal, consented testing only. Do **not** distribute it to unsuspecting people.
